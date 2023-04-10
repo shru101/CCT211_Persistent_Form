@@ -1,0 +1,2 @@
+logged_in=YES
+logged_in_account=user
