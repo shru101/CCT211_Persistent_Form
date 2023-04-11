@@ -16,7 +16,7 @@ class Start:
         self.isloggedin = False
 
         # Boot Layout
-        self.foglogo_image = ImageTk.PhotoImage(Image.open("images/1x/FOG logo.png"))
+        self.foglogo_image = ImageTk.PhotoImage(Image.open("FOG logo.png"))
         self.foglogo = Label(self.root, image=self.foglogo_image)
 
         self.login_signup_frame = Frame(self.root)
