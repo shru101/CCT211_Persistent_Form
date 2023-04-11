@@ -12,15 +12,3 @@ while not exit_fog:
             exit_fog = True
     else:
         exit_fog = True
-
-print("Code proccessed")
-
-"""
-TO DO LIST
-- Fix signed in implementation
-- Fix LIN writing when logging in (needs to write which account as well)
-- library with treeview
--   add scroll bar to any listbox or treeview
-- store with treeview
-- account settings window
-"""

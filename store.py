@@ -35,8 +35,6 @@ class Store:
         self.back_button.pack(side=BOTTOM)
         self.results()
 
-        # self.store.bind('<Button-1>', self.get_tree_selection)
-
     def back(self):
         self.home.screen_switch('home')
 
@@ -66,7 +64,6 @@ class Store:
             con.commit()
         elif game_info not in current_game_library:
 
-            # KNOWLEDGE GAINED FROM CHATGPT
             c.execute('''UPDATE Accounts SET Games=? WHERE Username=?''',
                       (current_game_library + game_info + ',', self.logged_in_account,))
             con.commit()

@@ -53,7 +53,8 @@ class UploadGame:
 
         self.root.mainloop()
 
-    def prototype(self):
+    @staticmethod
+    def prototype():
         messagebox.showinfo("Information", "This feature is not available in this build")
 
     def upload_game(self):

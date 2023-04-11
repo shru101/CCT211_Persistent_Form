@@ -7,7 +7,7 @@ from tkinter import *
 class HomeScreen:
     def __init__(self):
         self.root = Tk()
-        self.root.title("Home")  # Should this be changed to Fog as well?
+        self.root.title("Home") 
         self.is_logged_in = True
         file = open("LIN.txt", "r")
         self.logged_in_account = file.readlines()[1][18:]

@@ -62,7 +62,6 @@ class Library:
         game_name = self.library.get(tmp)
         c.execute('''SELECT Game_Id FROM Games WHERE Name=?''', (game_name,))
         game_id = str(c.fetchone()[0]) + ","
-        # IDEA FROM CHATGPT
         games = ",".join(self.fetch_games()) + ','
         games = games.replace(game_id, "")
         c.execute('''UPDATE Accounts SET Games=? WHERE Username=?''', (games, self.logged_in_account))
